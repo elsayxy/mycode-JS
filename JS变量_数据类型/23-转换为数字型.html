@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var age = prompt('请输入您的年龄：');
+        // 1.使用parseInt(变量)的方式转换数字型，返回值是整数。
+        // console.log(parseInt(age));
+        console.log(parseInt('3.14')); // 3
+        console.log(parseInt('3.94')); // 3
+        console.log(parseInt('120px')); // 120,会去掉单位
+        console.log(parseInt('re120px')); // NaN
+        // 2.使用parseFloat（变量）的方式转换数字型，返回值是小数（浮点数）
+        console.log(parseFloat('3.14'));  //3.14
+        console.log(parseFloat('120px')); //120,会去掉单位
+        console.log(parseFloat('aa120px'));  //NaN
+        // 3.使用Number（变量）的方式转换数字型
+        var str1 = '123';
+        console.log(Number(str1));
+        console.log(Number('345'));
+        // 4.利用算数运算 - * / ，隐式转换
+        console.log('12' - 0);  // 12
+        console.log('120' - '110'); // 10
+        console.log('120' * 2); // 240
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
