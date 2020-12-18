@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var money = 100;
+        var str = '请输入您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出'
+        var str1 = '请您输入存的钱数：';
+        var str2 = '请您输入取的钱数：';
+        var str3 = '您现在的钱数是：';
+        var str4 = '您正在退出!';
+        var str5 = '您的操作有误，请确认后重试!';
+        var select = prompt(str);
+        do {
+            switch (select) {
+                case '1':
+                    var num = prompt(str1);
+                    money += parseFloat(num);
+                    alert(str3 + money);
+                    break;
+                case '2':
+                    var num1 = prompt(str2);
+                    money -= parseFloat(num1);
+                    alert(str3 + money);
+                    break;
+                case '3':
+                    alert(str3 + money);
+                    break;
+                default:
+                    alert(str5);
+                    break;
+            }
+            select = prompt(str);
+        } while (select != 4);
+        if (select == 4) {
+            alert(str4);
+        } 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

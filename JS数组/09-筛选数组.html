@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 方法一
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var newarr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                // 新数组索引应该从0开始，依次递增
+                newarr[j] = arr[i];
+                j++;
+            }
+        }
+        console.log(newarr);
+        // 方法二
+        var arr2 = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7, 33];
+        var newarr2 = [];
+        // 刚开始newarr2.length就是0
+        for (var i = 0; i < arr2.length; i++) {
+            if (arr2[i] >= 10) {
+                // 新数组索引应该从0开始，依次递增
+                newarr2[newarr2.length] = arr2[i];
+            }
+        }
+        console.log(newarr2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
