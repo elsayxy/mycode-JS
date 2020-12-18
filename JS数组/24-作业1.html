@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getResult(n,m) {
+            return [n+m , n-m , n*m , n/m];
+        }
+        var num1 = prompt('请您输入第一个数字：');
+        var num2 = prompt('请您输入第二个数字：');
+        var re = getResult(parseFloat(num1), parseFloat(num2));
+        alert('您输入的两个数字之和是'+re[0]+'\n您输入的两个数字相减为'+re[1]+'\n您输入的两个数字相乘为'+re[2]+'\n您输入的两个数字相除为'+re[3]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

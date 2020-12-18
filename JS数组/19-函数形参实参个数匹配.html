@@ -8,7 +8,13 @@
         function getSum(num1,num2){
             console.log(num1 + num2);
         }
-        getSum()
+        // 1.实参的个数和形参的个数一致，正常输出
+        getSum(2,3); // 5
+        // 2.实参的个数多余形参的个数，取到形参的个数
+        getSum(2,2,1); // 4
+        // 3、实参的个数小于形参的个数,显示NaN
+        getSum(2); //NaN
+        // 建议：实参的个数=形参的个数
     </script>
 </head>
 <body>
