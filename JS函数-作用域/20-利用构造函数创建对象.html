@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 利用构造函数创建对象
+        // 构造函数的语法格式
+        // function 构造函数名(){
+        //     this.属性 = 值;
+        //     this.方法 = function(){}
+        // }
+        // new 构造函数名();
+        function Stars(uname,age,sex){
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(song){
+                console.log(song);
+            }
+        }
+        var ldh = new Stars('刘德华','18','男');
+        console.log(ldh.uname);
+        console.log(ldh.age);
+        console.log(ldh.sex);
+        ldh.sing('冰雨')
+        // 1、构造函数名字首字母要大写
+        // 2、构造函数不需要return，就可以返回结果
+        // 3、调用构造函数，必须使用new
+        // 4、只要 new Star（）调用函数，就创建一个对象
+        // 5、属性和方法前面必须添加this
+
+        var xz = new Stars('肖战','19','男');
+        console.log(xz.uname);
+        console.log(xz.age);
+        console.log(xz.sex);
+        xz.sing('光点');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

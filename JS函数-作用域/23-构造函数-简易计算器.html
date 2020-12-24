@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var text = '欢迎使用简易计算器：\n1.加法运算；\n2.减法运算；\n3.乘法运算；\n4.除法运算；\n5.退出；\n请输入您的选项：';
+
+        function Calc() {
+            this.ca = function () {
+                var num1 = 0, num2 = 0, result = 0;
+                var flag = false;
+                var select = prompt(text);
+                while (select != 5) {
+                    switch (select) {
+                        case '1':
+                            if (!flag) {
+                                num1 = prompt('请输入第一个参数：');
+                                num2 = prompt('请输入第二个参数：');
+                                flag = true;
+                            }
+                            result = parseFloat(num1) + parseFloat(num2);
+                            alert('您输入的两个数（' + num1 + '，' + num2 + '）相加值为：' + result);
+                            break;
+                        case '2':
+                            if (!flag) {
+                                num1 = prompt('请输入第一个参数：');
+                                num2 = prompt('请输入第二个参数：');
+                                flag = true;
+                            }
+                            result = num1 - num2;
+                            alert('您输入的两个数（' + num1 + '，' + num2 + '）相减值为：' + result);
+                            break;
+                        case '3':
+                            if (!flag) {
+                                num1 = prompt('请输入第一个参数：');
+                                num2 = prompt('请输入第二个参数：');
+                                flag = true;
+                            }
+                            result = num1 * num2;
+                            alert('您输入的两个数（' + num1 + '，' + num2 + '）相乘值为：' + result);
+                            break;
+                        case '4':
+                            if (!flag) {
+                                num1 = prompt('请输入第一个参数：');
+                                num2 = prompt('请输入第二个参数：');
+                                flag = true;
+                            }
+                            result = num1 / num2;
+                            alert('您输入的两个数（' + num1 + '，' + num2 + '）相除值为：' + result);
+                            break;
+                        default:
+                            break;
+                    }
+                    select = prompt(text);
+                }
+                if (select == 5) {
+                    alert('正在退出！');
+                }
+            }
+        }
+        var calc1 = new Calc();
+        calc1.ca();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

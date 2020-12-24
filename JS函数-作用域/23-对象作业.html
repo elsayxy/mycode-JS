@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 电脑对象
+        var computer = {
+            color: '银色',
+            wet: '550g',
+            bland: '联想',
+            type: 'A5050',
+            skills: function(){
+                console.log('看电影，听音乐，打游戏，敲代码');
+            }
+        }
+        console.log(computer.color,computer.wet,computer.bland,computer.type);
+        computer.skills();
+        // 按钮对象
+        var btn = new Object();
+        btn.width = 100;
+        btn.higth = 50;
+        btn.bgc = 'red';
+        btn.click = function(){
+            console.log('单击');
+        }
+        console.log(btn.width,btn.higth,btn.bgc);
+        btn.click();
+        // 车对象
+        function Car(wet,color,bland) {
+            this.wet = wet;
+            this.color = color;
+            this.bland = bland;
+            this.skills = function(sk){
+                console.log(sk);
+            }
+        }
+        var dazong = new Car('3400kg','黄色','大众');
+        dazong.skills('载人，拉货，耕田');
+        console.log(dazong.wet,dazong['color'],dazong.bland);
+        var bene = new Car('3450kg','黑色','奔驰');
+        bene.skills('载人，拉货，耕田');
+        console.log(bene.wet,bene['color'],bene.bland);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
