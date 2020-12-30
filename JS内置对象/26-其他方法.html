@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1、替换字符replace（‘被替换的字符’，‘替换的字符’）
+        // 注意：如果有多个相同的字符，只替换第一个
+        var str= 'andyandy';
+        console.log(str.replace('a','r'));
+
+        // 将字符串里所有的o替换为*
+        var str2 = 'werpodsfoefosfedosef';
+        while (str2.indexOf('o')!= -1) {
+            str2 = str2.replace('o','@');
+        }
+        console.log(str2);
+
+        // 2、字符串转换为数组：split。
+        // 关联：将数组转换为字符串：join
+        var str3 = 'red,pink,blue';
+        console.log(str3.split(','));
+        var str4 = 'red*pink*blue';
+        console.log(str4.split('*'));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

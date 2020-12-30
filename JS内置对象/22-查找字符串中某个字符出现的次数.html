@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //核心算法：先查找第一个o的位置
+        // 然后只要indexOf返回的结果不是 -1，就继续往后查找
+        // 因为indexOf只能查找到第一个，所以后面的查找，必须是当前索引+1，然后继续查找
+        var str = 'osdsosdsodwdosdsodwdw';
+        var index = str.indexOf('o');
+        var num = 0;
+        while (index != -1){
+            console.log(index);
+            num++;
+            index = str.indexOf('o', index+1);
+        }
+        console.log('字符串中o出现的次数：'+num);
+
+
+        // 作业，查找数组['red','yellow','pink','red','red']中所有red出现的位置以及次数
+        var arr = ['red','yellow','pink','red','red'];
+        var index2 = arr.indexOf('red');
+        var num2 = 0;
+        while (index2 != -1){
+            console.log(index2);
+            num2++;
+            index2 = arr.indexOf('red', index2+1);
+        }
+        console.log('数组中red出现的次数：'+num2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

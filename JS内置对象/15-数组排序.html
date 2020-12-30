@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.翻转数组
+        var arr = ['pink','red','green'];
+        arr.reverse();
+        console.log(arr);
+
+        // 2.数组排序
+        var arr1 = [3,4,1,8,0];
+        arr1.sort();
+        console.log(arr1);
+
+        var arr2 = [1,12,3,6,36,66];
+        arr2.sort();    // [ 1, 12, 3, 36, 6, 66 ]
+        console.log(arr2);
+
+        arr2.sort(function(a,b){
+            // return a - b; // 升序排列
+            return b - a; // 降序排列
+        })
+        console.log(arr2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

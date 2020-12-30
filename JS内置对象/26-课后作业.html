@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = 'abaasdffggghhjjkkgfddssss3444343';
+        console.log('字符串的长度为：'+str.length);
+        console.log('指定位置0,3,5,9的字符分别为：'+str.charAt(0)+','+str.charAt(3)+','+str.charAt(5)+','+str.charAt(9));
+        if (str.indexOf('i') !== -1){
+            console.log('字符串中存在字符【i】');
+        } else {
+            console.log('字符串中不存在字符【i】');
+        }
+        if (str.indexOf('c') !== -1){
+            console.log('字符串中存在字符【c】');
+        }else {
+            console.log('字符串中不存在字符【c】');
+        }
+        if (str.indexOf('b') !== -1){
+            console.log('字符串中存在字符【b】');
+        }else {
+            console.log('字符串中不存在字符【b】');
+        }
+        console.log(str.replace('g','22'));
+        console.log(str.replace('ss','b'));
+        console.log('字符串中1-5的字符为：'+str.substr(0,5));
+
+        var o = {};
+        console.log(str);
+        for (var i=0; i<str.length; i++){
+            var chas = str.charAt(i);
+            if (o[chas]){
+                o[chas]++;
+            } else {
+                o[chas] = 1;
+            }
+        }
+        var max = 0;
+        var ch = '';
+        for (k in o){
+            if (o[k] > max){
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log('字符串中出现次数最多的字符是'+ch+'，出现的次数时：'+max);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
